@@ -7,6 +7,9 @@
 # Ignore bundler config.
 /.bundle
 
+# DOTENV config file
+.env
+
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
