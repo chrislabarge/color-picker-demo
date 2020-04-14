@@ -1,0 +1,20 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title ColorPickerDemo
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+    %style
+      \.field_with_errors { display: inline-block }
+      \.field_with_errors input { border-color: red }
+      \.option { margin-top: 1em; }
+  %body
+    - flash.each do |type, msg|
+      %div
+        %b
+          = type
+        = msg
+    = yield

@@ -1,0 +1,19 @@
+.option
+
+  %div
+    Font Color:
+    = color_option.font_color
+  %div
+    Background Color:
+    = color_option.background_color
+  %div
+    Created At:
+    = color_option.created_at
+  %div
+    Updated At:
+    = color_option.updated_at
+
+  %div
+    = link_to "Edit", edit_color_option_path(color_option)
+    = link_to "Delete", color_option_path(color_option),
+      method: :delete, data: { confirm: "Are you sure?" }
