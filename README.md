@@ -1,10 +1,12 @@
 # Rails 6, Stimulus, Webpacker, Picker
 
 This is a Rails 6 demo application for my [ tutorial
-](chrislabarge.com/posts/color-picker/) on installing
+](http://chrislabarge.com/posts/color-picker/) on installing
 [Pickr](https://github.com/Simonwep/pickr) color picker JS library.
 
-Visit [chrislabarge.com](http://chrislabarge.com)
+[Hosted Application](https://color-picker-demo.herokuapp.com/) (Free hobby dyno...may take 10-20 seconds to wake up)
+
+Visit [chrislabarge.com](http://chrislabarge.com) for more content.
 
 Technologies used
 -----------------------------
