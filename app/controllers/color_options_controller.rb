@@ -89,7 +89,7 @@ class ColorOptionsController < ApplicationController
   end
 
   def default_font_color
-    :white
+    :gray
   end
 
   def default_background_color

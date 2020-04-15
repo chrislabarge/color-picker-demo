@@ -1,0 +1,5 @@
+@import '@simonwep/pickr/dist/themes/classic.min.css';
+
+.field .pickr {
+  display: inline-block;
+}

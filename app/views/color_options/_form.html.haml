@@ -1,5 +1,14 @@
 = form_with(model: local_assigns[:model], local: true) do |f|
- = f.text_field :font_color
- = f.text_field :background_color
 
- = f.submit
+  .field{ data: { controller: "color-picker" } }
+    = f.text_field :font_color, data: { target: "color-picker.input" }
+    %div{ data: { target: "color-picker.picker" } }
+    = f.label :font_color
+
+  .field{ data: { controller: "color-picker" } }
+    = f.text_field :background_color, data: { target: "color-picker.input" }
+    %div{ data: { target: "color-picker.picker" } }
+    = f.label :background_color
+
+  .field
+    = f.submit
